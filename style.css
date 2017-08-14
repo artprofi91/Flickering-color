@@ -1,0 +1,43 @@
+html,
+body {
+    background-color: #B1EBB8;
+}
+
+.words span {
+    position: relative;
+    opacity: 0;
+    animation: animateWords 10s ease-in-out infinite;
+}
+
+.words span:nth-child(4n) {
+    animation-delay: 0s;
+    color: #0E4515;
+}
+
+.words span:nth-child(4n-1) {
+    animation-delay: 1s;
+    color: #CB3131;
+}
+
+.words span:nth-child(4n-3) {
+    animation-delay: 2s;
+    color: #6E26CB;
+}
+
+.words span:nth-child(4n-2) {
+    animation-delay: 3s;
+    color: #DEDD3E;
+}
+
+@-webkit-keyframes animateWords {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.margin {
+    margin-top: 20%;
+}
